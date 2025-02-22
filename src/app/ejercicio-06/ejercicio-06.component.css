@@ -1,0 +1,11 @@
+.barra{
+    background: plum;
+    border-radius: 10px;
+    border:  2px solid palevioletred;
+    width: 280px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px;
+}
