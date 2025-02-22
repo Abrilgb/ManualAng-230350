@@ -1,0 +1,10 @@
+.textSaludo{
+    color: rgb(99, 31, 167);
+    font-family: 'Times New Roman', Times, serif;
+}
+.textResaltado{
+    color: rgb(56, 18, 207);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}

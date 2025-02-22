@@ -1,0 +1,17 @@
+.textSaludo{
+    color: rgb(99, 31, 167);
+    font-family: 'Times New Roman', Times, serif;
+}
+.textResaltado{
+    color: rgb(42, 12, 149);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+.contenedor{
+    padding: 20px;
+    margin: 40px;
+    background-color: rgb(196, 170, 240);
+    border-radius: 20px;
+    border-color: black;
+}
