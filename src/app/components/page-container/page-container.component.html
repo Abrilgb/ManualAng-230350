@@ -1,0 +1,23 @@
+<div class="flex h-screen">
+    <!-- Botón para mostrar la Sidebar -->
+    <button (click)="toggleSidebar()" class="fixed top-4 left-4 bg-pink-500 text-white p-2 rounded">
+      ☰
+    </button>
+  
+    <!-- Sidebar, oculta si `isSidebarVisible` es `false` -->
+    <div *ngIf="isSidebarVisible" class="bg-gray-800 text-white h-full w-64 p-4 absolute z-50">
+      <button (click)="toggleSidebar()" class="text-right block w-full text-white">✖</button>
+      <h2 class="text-lg font-semibold mb-4">Menú</h2>
+      <ul>
+        <li><a class="block p-2 hover:bg-gray-700" routerLink="/page1">Página 1</a></li>
+        <li><a class="block p-2 hover:bg-gray-700" routerLink="/page2">Página 2</a></li>
+        <li><a class="block p-2 hover:bg-gray-700" routerLink="/page3">Página 3</a></li>
+      </ul>
+    </div>
+  
+    <!-- Contenido principal -->
+    <div class="flex-1 p-4 bg-gray-100">
+      <app-content></app-content>
+    </div>
+  </div>
+  

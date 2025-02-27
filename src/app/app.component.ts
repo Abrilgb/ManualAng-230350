@@ -1,19 +1,31 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Ejercicio01Component } from './ejercicio-01/ejercicio-01.component';
-import { Ejercicio02Component } from './ejercicio-02/ejercicio-02.component';
-import { Ejercicio03Component } from './ejercicio-03/ejercicio-03.component';
-import { Ejercicio04Component } from './ejercicio-04/ejercicio-04.component';
-import { Ejercicio05Component } from './ejercicio-05/ejercicio-05.component';
-import { Ejercicio06Component } from './ejercicio-06/ejercicio-06.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common'; 
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Ejercicio01Component, Ejercicio02Component, Ejercicio03Component, Ejercicio04Component, Ejercicio05Component, Ejercicio06Component, MatButtonModule],
+  standalone: true,
+  imports: [
+    CommonModule,  
+    RouterOutlet,
+    MatButtonModule,
+    ToolbarComponent,
+    NavbarComponent,
+    SidebarComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ManualAng-230350';
+  title = 'ManualEjercicios_Angular_230574';
+  isSidebarVisible: boolean = false;
+
+  toggleSidebar() {
+    this.isSidebarVisible = !this.isSidebarVisible;
+    console.log("Sidebar estado:", this.isSidebarVisible);
+  }
 }

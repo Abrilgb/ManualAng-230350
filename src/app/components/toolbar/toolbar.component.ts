@@ -28,9 +28,9 @@ import {MatMenuModule} from '@angular/material/menu';
         <img class="user-avatar" src="assets/user.jpg" alt="User avatar">
       </button>
       
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Perfil</button>
-        <button mat-menu-item>Cerrar Seción</button>
+      <mat-menu #menu="matMenu" bg-pink-700>
+        <button mat-menu-item bg-pink-500>Perfil</button>
+        <button mat-menu-item bg-pink-500>Cerrar Seción</button>
       </mat-menu>
     </mat-toolbar>`,
   styleUrl: './toolbar.component.css'

@@ -1,0 +1,14 @@
+<nav class="relative bg-gradient-to-r from-pink-400 via-orange-300 to-red-500 text-white p-4 flex justify-between items-center shadow-lg">
+  <!-- Menú Principal -->
+  <div class="flex space-x-4">
+    <button class="bg-white/20 hover:bg-white/30 px-3 py-2 rounded transition ">Inicio</button>
+    <div class="relative group">
+      <button class="bg-white/20 hover:bg-white/30 px-3 py-2 rounded transition">Opciones ▼</button>
+      <div class="absolute top-full left-0 z-[60] hidden group-hover:block bg-white text-black shadow-lg mt-2 rounded-lg min-w-[150px]">
+        <a class="block px-4 py-2 hover:bg-orange-200 rounded" routerLink="/page1">Página 1</a>
+        <a class="block px-4 py-2 hover:bg-pink-200 rounded" routerLink="/page2">Página 2</a>
+        <a class="block px-4 py-2 hover:bg-red-200 rounded" routerLink="/page3">Página 3</a>
+      </div>
+    </div>
+  </div>
+</nav>
